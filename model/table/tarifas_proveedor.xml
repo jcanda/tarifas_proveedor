@@ -54,7 +54,7 @@
         <nombre>tarifas_proveedor_tarifa_codarticulo_articulos_referencia</nombre>
         <consulta>FOREIGN KEY (tarifa_codarticulo)
         REFERENCES articulos (referencia)
-        ON DELETE RESTRICT ON UPDATE CASCADE
+        ON DELETE CASCADE ON UPDATE CASCADE
         </consulta>
     </restriccion>
     
@@ -62,7 +62,7 @@
         <nombre>tarifas_proveedor_tarifa_codproveedor_proveedores_codproveedor</nombre>
         <consulta>FOREIGN KEY (tarifa_codproveedor)
         REFERENCES proveedores (codproveedor)
-        ON DELETE RESTRICT ON UPDATE CASCADE
+        ON DELETE CASCADE ON UPDATE CASCADE
         </consulta>
     </restriccion>
 
