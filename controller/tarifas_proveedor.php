@@ -41,7 +41,7 @@ class tarifas_proveedor extends fs_controller {
         parent::__construct(__CLASS__, 'Tarifas de proveedor', 'compras', FALSE, FALSE);
     }
 
-    protected function process() {
+    protected function private_core() {
         
         $this->offset = 0;
         $this->articulo_s = FALSE;
