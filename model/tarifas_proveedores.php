@@ -1,7 +1,8 @@
 <?php
 /*
  * This file is part of FacturaSctipts
- * Copyright (C) 2013-2015  Carlos Garcia Gomez  neorazorx@gmail.com
+ * Copyright (C) 2017  Carlos Garcia Gomez  neorazorx@gmail.com
+ * Copyright (C) 2017  Jcanda info@zapasoft.com
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -18,7 +19,8 @@
  */
 
 /**
- * Un autorizado. Puede estar relacionado con un proveedor.
+ * Permite tener un listado con tarifas personalizadas para cada proveedor de cualquier articulo
+ * Por defecto siempre cojerá la tarifa mas actualizada.
  */
 class tarifas_proveedores extends fs_model
 {
@@ -32,7 +34,7 @@ class tarifas_proveedores extends fs_model
 
    public function __construct( $p = FALSE)
    {
-      parent::__construct('tarifas_proveedor', 'plugins/tarifas_proveedor/');
+      parent::__construct('tarifas_proveedor');
 
       if($p)
       {
