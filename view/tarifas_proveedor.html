@@ -112,7 +112,7 @@
                     {loop="$fsc->tarifas_select"}
                     <tr>
                         <td class="text-left">{$value->tarifa_fecha}</td>
-                        <td class="text-left">{$value->nombre_articulo()['descripcion']}</td>
+                        <td class="text-left"><a href="index.php?page=ventas_articulo&ref={$value->tarifa_codarticulo}" target="_blank">{$value->tarifa_codarticulo}</a> - {$value->nombre_articulo()['descripcion']}</td>
                         <td class="text-left"><b>{$fsc->show_precio($value->tarifa_pvp)}</b></td>
                         <td class="text-left">{$value->tarifa_agente}</td>                        
                         <td class="text-right">{$value->tarifa_motivo}</td>
@@ -141,7 +141,7 @@
                     {loop="$fsc->tarifas_all"}
                     <tr>
                         <td class="text-left">{$value->tarifa_fecha}</td>
-                        <td class="text-left">{$value->nombre_articulo()['descripcion']}</td>
+                        <td class="text-left"><a href="index.php?page=ventas_articulo&ref={$value->tarifa_codarticulo}" target="_blank">{$value->tarifa_codarticulo}</a> - {$value->nombre_articulo()['descripcion']}</td>
                         <td class="text-left"><b>{$fsc->show_precio($value->tarifa_pvp)}</b></td>
                         <td class="text-left">{$value->tarifa_agente}</td>                        
                         <td class="text-right">{$value->tarifa_motivo}</td>
@@ -180,7 +180,7 @@
                     {loop="$fsc->tarifas_select"}
                     <tr>
                         <td class="text-left">{$value->tarifa_fecha}</td>
-                        <td class="text-left">{$value->nombre_articulo()['descripcion']}</td>
+                        <td class="text-left"><a href="index.php?page=ventas_articulo&ref={$value->tarifa_codarticulo}" target="_blank">{$value->tarifa_codarticulo}</a> - {$value->nombre_articulo()['descripcion']}</td>
                         <td class="text-left"><b>{$fsc->show_precio($value->tarifa_pvp)}</b></td>
                     </tr>
                     {else}
